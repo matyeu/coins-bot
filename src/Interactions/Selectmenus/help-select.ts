@@ -55,10 +55,14 @@ const embed = new EmbedBuilder()
                     embed.setDescription("> 🗨️ Vous gagnez `5 coins` à tous les messages envoyés\n> 🔊 Vous gagnez `300 coins` toutes les 15 minutes lorsque vous êtes en vocal\n> 🎥 Vous gagnez `400 coins` lorsque vous êtes en stream\n> 📹 Vous gagnez `500 coins` lorqque vous activez votre caméra !")
 
                  for (const category of commandFolder) {
-                     if (category !== "Economie") continue;
+                     if (category !== "Casino") continue;
+
+                     const emojisCat = {
+                         Casino: client.getEmoji(EMOJIS.game),
+                     }
 
                      embed.addFields({
-                         name: `La liste des commandes - (${client.slashCommands.filter(cmd => cmd.slash.data.category == category).map(cmd => cmd.slash.data.name).length})`,
+                         name: `${emojisCat[category]} ${category} - (${client.slashCommands.filter(cmd => cmd.slash.data.category == category).map(cmd => cmd.slash.data.name).length})`,
                          value: `\`${client.slashCommands.filter(cmd => cmd.slash.data.category == category).map(cmd => cmd.slash.data.name).join(',')}\``
                      })
                  }

@@ -17,7 +17,14 @@
 
 | Name          | Description                                                             | Sub-commands                | Usage                         | Cd     |
 | ------------- | ----------------------------------------------------------------------- | --------------------------- | ----------------------------- | ------ |
-| help          | Command help.                                                           | none                        | none                          | 10secs |
+| help          | Command help.                                                           | none                        | help [command]                | 10secs |
+
+### Casino
+
+| Name          | Description                          | Sub-commands                | Usage                 | Cd     |
+| ------------- | ------------------------------------ | --------------------------- | --------------------- | ------ |
+| blackjack     | Allows you to play blacxkjack.       | none                        | \<montant>            | 10secs |
+
 
 ### Development
 
