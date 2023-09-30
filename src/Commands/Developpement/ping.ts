@@ -32,7 +32,7 @@ export const slash = {
     data: {
         name: __filename.slice(__dirname.length + 1, __filename.length - 3),
         description: "Affiches les latences du bot",
-        category: "Development",
+        category: "Développement",
         permissions: ["Administrator"],
     }
 }
