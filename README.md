@@ -13,6 +13,12 @@
 
 ## Commands
 
+### Administration
+
+| Name          | Description                          | Sub-commands                | Usage                      | Cd     |
+| ------------- | ------------------------------------ | --------------------------- | -------------------------- | ------ |
+| drop          | Send money to another player.        | none                        | drop \<montant> [channel]  | 10secs |
+
 ### General
 
 | Name          | Description                                                             | Sub-commands                | Usage                         | Cd     |
