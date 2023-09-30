@@ -4,7 +4,7 @@ import {EMBED_GENERAL, EMBED_INFO, EMOJIS, FOOTER} from "../../config";
 
 export default async function (client: CoinsClient, interaction: CommandInteraction) {
 
-    const commandOption: any = interaction.options.get("commande", true).value as string;
+    const commandOption: any = interaction.options.get("commande", false);
 
     if (!commandOption) {
 
@@ -45,7 +45,7 @@ export default async function (client: CoinsClient, interaction: CommandInteract
     } else {
 
         const commandArray = client.slashCommands.map(command => command.slash.data);
-        const commandeInfo = commandArray.filter((command) => command.name === commandOption.toLowerCase());
+        const commandeInfo = commandArray.filter((command) => command.name === commandOption.value.toLowerCase());
 
         const embed = new EmbedBuilder()
          .setColor(EMBED_INFO)
