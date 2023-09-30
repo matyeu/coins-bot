@@ -47,9 +47,3 @@
 ## Contributions/Licence
 
 This project has an MIT license. And you are welcome to contribue. To contribute, please open a pull request on dev branch.
-
-## Useful links
-
-* [Bot invitation link](#)
-* [Discord invitation link](#)
-
