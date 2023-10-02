@@ -27,9 +27,10 @@
 
 ### Casino
 
-| Name          | Description                          | Sub-commands                | Usage                 | Cd     |
-| ------------- | ------------------------------------ | --------------------------- | --------------------- | ------ |
-| blackjack     | Allows you to play blacxkjack.       | none                        | \<montant>            | 10secs |
+| Name          | Description                          | Sub-commands                | Usage                      | Cd     |
+| ------------- | ------------------------------------ | --------------------------- | -------------------------- | ------ |
+| blackjack     | Allows you to play blacxkjack.       | none                        | \<montant>                 | 10secs |
+| gunfight      | Allows you to play gunfight.         | none                        | \<montant> \<utilisateur>  | 10secs |
 
 
 ### Development
@@ -49,7 +50,6 @@
 ## Développement
 
 * [Typescript](#) - Typescript
-* [Ejs](#) - Ejs
 * [Discord.js](https://discord.js.org) - Discord.js
 * [Mongoose](https://mongodb.com) - Mongoose
 

@@ -14,7 +14,7 @@ const client = new CoinsClient({
 
 loadCommands(client);
 loadEvents(client);
-//loadButtons(client);
+loadButtons(client);
 loadSelectMenus(client);
 //loadModals(client);
 
