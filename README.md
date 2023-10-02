@@ -27,11 +27,11 @@
 
 ### Casino
 
-| Name          | Description                             | Sub-commands                | Usage                      | Cd     |
-| ------------- | --------------------------------------- | --------------------------- | -------------------------- | ------ |
-| blackjack     | Allows you to play blacxkjack.          | none                        | \<montant>                 | 10secs |
-| gunfight      | Allows you to play gunfight.            | none                        | \<montant> \<utilisateur>  | 10secs |
-| pfc           | Allows you to play rock feal scissors.  | none                        | \<montant> \<utilisateur>  | 10secs |
+| Name          | Description                             | Sub-commands                | Usage                               | Cd     |
+| ------------- | --------------------------------------- | --------------------------- | ----------------------------------- | ------ |
+| blackjack     | Allows you to play blacxkjack.          | none                        | blackjack \<montant>                | 10secs |
+| gunfight      | Allows you to play gunfight.            | none                        | gunfight \<montant> \<utilisateur>  | 10secs |
+| pfc           | Allows you to play rock feal scissors.  | none                        | pfc \<montant> \<utilisateur>       | 10secs |
 
 
 ### Development
