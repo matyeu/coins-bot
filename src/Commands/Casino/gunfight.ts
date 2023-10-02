@@ -85,7 +85,7 @@ export const slash = {
             {
                 name: "montant",
                 type: ApplicationCommandOptionType.Number,
-                description: "La somme d'argent que vous voulez drop.",
+                description: "La somme d'argent que vous voulez pariez.",
                 required: true,
             },
             {
