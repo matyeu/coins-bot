@@ -35,13 +35,13 @@ export default async function (client: CoinsClient, interaction: CommandInteract
     const buttons = new ActionRowBuilder<ButtonBuilder>()
         .addComponents(
             new ButtonBuilder()
-                .setCustomId(`acceptDuel-button:${interaction.user.id}-${member.id}`)
+                .setCustomId(`acceptGun-button:${interaction.user.id}-${member.id}`)
                 .setLabel("Oui")
                 .setStyle(ButtonStyle.Primary)
                 )
         .addComponents(
             new ButtonBuilder()
-                .setCustomId(`refusedDuel-button:${interaction.user.id}-${member.id}`)
+                .setCustomId(`refusedGun-button:${interaction.user.id}-${member.id}`)
                 .setLabel("Non")
                 .setStyle(ButtonStyle.Danger)
                 )
