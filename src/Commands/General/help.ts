@@ -72,7 +72,7 @@ export const slash = {
         name: __filename.slice(__dirname.length + 1, __filename.length - 3),
         description: "Command help",
         usage: "help [command]",
-        category: "Général",
+        category: "General",
         permissions: ["SendMessages"],
         options: [
             {

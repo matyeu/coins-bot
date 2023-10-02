@@ -38,10 +38,10 @@ const embed = new EmbedBuilder()
             case 'general':
                 embed.setTitle(`${client.getEmoji(EMOJIS.command)} La liste des commandes ${client.getEmoji(EMOJIS.command)}`);
                 for (const category of commandFolder) {
-                    if (category !== "Général") continue;
+                    if (category !== "General") continue;
 
                     const emojisCat = {
-                        G\u00e9n\u00e9ral: client.getEmoji(EMOJIS.general),
+                        General: client.getEmoji(EMOJIS.general),
                     }
 
                     embed.addFields({
