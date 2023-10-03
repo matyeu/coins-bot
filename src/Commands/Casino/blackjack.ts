@@ -9,6 +9,8 @@ export default async function (client: CoinsClient, interaction: CommandInteract
     const bet = interaction.options.get('montant', true).value as number;
     const member = await interaction.guild!.members.fetch(interaction.user.id);
 
+    const coinEmoji = client.getEmoji(EMOJIS.coin);
+
     const userFirst = blackjackHelper();
     const userSecond = blackjackHelper();
     let userHand = userFirst.shape + userFirst.number + userSecond.shape + userSecond.number;
@@ -22,10 +24,13 @@ export default async function (client: CoinsClient, interaction: CommandInteract
     let hasHit = false;
 
     if (casinoConfig.money < bet || bet === 0)
-        return interaction.replyErrorMessage(client, "Vous **n'avez pas** assez de pièces !", true);
+        return interaction.replyErrorMessage(client, `**Oops, il vous manque \`${bet - casinoConfig.money}\`${coinEmoji} !**`, true);
+
+    if (bet < 50)
+        return interaction.replyErrorMessage(client, `**Oops, vous devez** miser à montant supérieur à **50** ${coinEmoji} !`, true);
 
     if (bet > 500)
-        return interaction.replyErrorMessage(client, "**Vous pouvez** miser jusqu'à **500** pièces !", true);
+        return interaction.replyErrorMessage(client, `**Oops, vous pouvez** miser jusqu'à **500** ${coinEmoji} pièces !`, true);
 
 
     const embed = new EmbedBuilder()
