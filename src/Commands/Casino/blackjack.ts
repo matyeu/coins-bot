@@ -268,7 +268,7 @@ export default async function (client: CoinsClient, interaction: CommandInteract
 
 export const slash = {
     data: {
-        name: "blackjack",
+        name: __filename.slice(__dirname.length + 1, __filename.length - 3),
         description: "Permet de jouer au blackjack.",
         usage: "blackjack <montant>",
         category: "Casino",
