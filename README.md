@@ -30,6 +30,7 @@
 | Name          | Description                             | Sub-commands                | Usage                               | Cd     |
 | ------------- | --------------------------------------- | --------------------------- | ----------------------------------- | ------ |
 | blackjack     | Allows you to play blacxkjack.          | none                        | blackjack \<montant>                | 10secs |
+| crash         | Allows you to play crash.               | none                        | crash \<montant>                    | 10secs |
 | roulette      | Allows you to play roulette.            | none                        | roulette \<montant>                 | 10secs |
 | gunfight      | Allows you to play gunfight.            | none                        | gunfight \<montant> \<utilisateur>  | 10secs |
 | pfc           | Allows you to play rock feal scissors.  | none                        | pfc \<montant> \<utilisateur>       | 10secs |
