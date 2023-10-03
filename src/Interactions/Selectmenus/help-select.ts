@@ -55,10 +55,11 @@ const embed = new EmbedBuilder()
                     embed.setDescription("> 🗨️ Vous gagnez `5 coins` à tous les messages envoyés\n> 🔊 Vous gagnez `300 coins` toutes les 15 minutes lorsque vous êtes en vocal\n> 🎥 Vous gagnez `400 coins` lorsque vous êtes en stream\n> 📹 Vous gagnez `500 coins` lorqque vous activez votre caméra !")
 
                  for (const category of commandFolder) {
-                     if (category !== "Casino") continue;
+                     if (category !== "Casino" && category !== "Metier") continue;
 
                      const emojisCat = {
                          Casino: client.getEmoji(EMOJIS.game),
+                         Metier: client.getEmoji(EMOJIS.newspaper),
                      }
 
                      embed.addFields({

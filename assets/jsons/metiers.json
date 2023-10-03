@@ -1,0 +1,38 @@
+[
+    {
+        "name" : "Braqueur",
+        "description" : "Accès à la commande `braquage` qui permet de braquer les coins en banque d'une autre personne ou d'une team",
+        "reputation": 16,
+        "actived": false
+    },
+    {
+        "name" : "Tueur",
+        "description" : "Accès à la commande `kill` qui permet de voler des points de réputation à un autre utilisateur",
+        "reputation": 14,
+        "actived": true
+    },
+    {
+        "name" : "Juge",
+        "description" : "Accès à la commande `juge` qui permet de lancer un jugement pour retirer le métier d'un autre joueur",
+        "reputation": 15,
+        "actived": false
+    },
+    {
+        "name" : "Cambrioleur",
+        "description" : "Accès à la commande `cambriolage` qui permet de voler des coins dans l'entrepôt d'un autre utilisateur",
+        "reputation": 12,
+        "actived": false
+    },
+    {
+        "name" : "Hacker",
+        "description" : "Accès à la commande `hack` qui permet de détruire un cadena d'une team",
+        "reputation": 13,
+        "actived": false
+    },
+    {
+        "name" : "Policier",
+        "description" : "Accès à la commande `arrest` qui permet d'arrêter un joueur et de vérifier s'il n'a pas de :pill:, le policier retire les :pill: du joueur et récupère 900 par :pill: saisie !",
+        "reputation": 12,
+        "actived": false
+    }
+]

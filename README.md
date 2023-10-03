@@ -34,6 +34,11 @@
 | gunfight      | Allows you to play gunfight.            | none                        | gunfight \<montant> \<utilisateur>  | 10secs |
 | pfc           | Allows you to play rock feal scissors.  | none                        | pfc \<montant> \<utilisateur>       | 10secs |
 
+### Metier
+
+| Name          | Description                          | Sub-commands                | Usage                 | Cd     |
+| ------------- | ------------------------------------ | --------------------------- | --------------------- | ------ |
+| metier        | Allows you to purchase a profession. | none                        | metier [metier]       | 10secs |
 
 ### Development
 

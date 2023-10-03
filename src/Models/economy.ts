@@ -9,6 +9,8 @@ let Economy = model("Economy", new Schema({
     userId: String,
     money: Number,
     bank: Number,
+    job: String,
+    reputation: Number,
     cooldowns: {
         daily: Date,
         crime: Date,
@@ -23,6 +25,8 @@ export const def = {
     userId: "",
     money: 0,
     bank: 0,
+    job: "",
+    reputation: 0,
     cooldowns: {
         daily: 0,
         crime: 0,

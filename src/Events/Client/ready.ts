@@ -2,6 +2,7 @@ import { CoinsClient } from "../../Library";
 import mongoose from "mongoose";
 import chalk from "chalk";
 import { find as findServer, edit as editServer, update as updateServer } from "../../Models/server";
+import { update as updateEconomy } from "../../Models/economy";
 import { readdirSync } from "fs";
 import { SERVER_LIVE, SERVER_DEV } from "../../config";
 
@@ -48,6 +49,11 @@ export default async function (client: CoinsClient) {
 
         await updateServer(guild.id);
         
+        for (const member of guild.members.cache.map(member => member)) {
+            if (member.user.bot) continue;
+            await updateEconomy(guild.id, member.user.id);
+        }
+
         const categoryFolder = readdirSync('./src/Commands');
         for (const categoryName of categoryFolder) {
             let categoryDatabase = serverConfig.maintenance.category;
